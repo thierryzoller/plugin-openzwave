@@ -113,7 +113,7 @@
         }
         message += '<br><ul class="fa-ul">';
         $.each(val, function (key2, val2) {
-            message += '<li><i class="fa fa-arrow-right btn-success" aria-hidden="true"></i>  ' + val2.label + ' (' + val2.index + ')</li>';
+            message += '<li><i class="fas fa-arrow-right btn-success" aria-hidden="true"></i>  ' + val2.label + ' (' + val2.index + ')</li>';
         });
         message += '</ul></p></li>';
     });
@@ -667,7 +667,7 @@ function display_node_info(){
         if (nodeIsFailed) {
             warningMessage += "<li>{{Le contrôleur pense que ce noeud est en échec, essayez }} " +
             "<a data-action='hasNodeFailed' class='btn btn-xs btn-primary  node_action'><i class='fa fa-heartbeat' aria-hidden='true'></i> {{Nœud en échec ?}}</a> {{ou}}" +
-            "<a data-action='testNode' class='btn btn-info  node_action'><i class='fa fa-check-square-o'></i> {{Tester le nœud}}</a> {{pour essayer de corriger.}}</li>"
+            "<a data-action='testNode' class='btn btn-info  node_action'><i class='fas fa-check-square-o'></i> {{Tester le nœud}}</a> {{pour essayer de corriger.}}</li>"
         }
         if (data.data.genericType.value == 1) {
             data.data.can_wake_up.value = true;
@@ -795,7 +795,7 @@ function display_node_info(){
                     var value = '';
                     var genre = data.instances[instance].commandClasses[commandclass].data[index].genre;
                     if (data.instances[instance].commandClasses[commandclass].data[index].read_only == false) {
-                        value += '<a class="btn btn-xs btn-primary editValue" data-index="' + index + '" data-instance="' + instance + '" data-cc="' + commandclass + '" data-valuedataitems="' + data.instances[instance].commandClasses[commandclass].data[index].data_items + '" data-type="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-name="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-value="' + data.instances[instance].commandClasses[commandclass].data[index].val + '" data-valuegenre="' +genre +'"><i class="fa fa-wrench"></i></a> ';
+                        value += '<a class="btn btn-xs btn-primary editValue" data-index="' + index + '" data-instance="' + instance + '" data-cc="' + commandclass + '" data-valuedataitems="' + data.instances[instance].commandClasses[commandclass].data[index].data_items + '" data-type="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-name="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-value="' + data.instances[instance].commandClasses[commandclass].data[index].val + '" data-valuegenre="' +genre +'"><i class="fas fa-wrench"></i></a> ';
                     }
                     if (data.instances[instance].commandClasses[commandclass].data[index].type == 'bool') {
                         var boolValue = data.instances[instance].commandClasses[commandclass].data[index].val;
@@ -812,8 +812,8 @@ function display_node_info(){
                     var polling = '<span style="width : 22px;"></span>';
                     if (data.instances[instance].commandClasses[commandclass].data[index].write_only == false && first_index_polling) {
                         first_index_polling = false;
-                        var polling = '<a style="position:relative;top:-1px;" class="btn btn-primary btn-xs editPolling cursor" data-index="' + index + '" data-polling="' + data.instances[instance].commandClasses[commandclass].data[index].poll_intensity + '" data-instance="' + instance + '" data-cc="' + commandclass + '" data-valuedataitems="' + data.instances[instance].commandClasses[commandclass].data[index].data_items + '" data-type="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-name="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-value="' + data.instances[instance].commandClasses[commandclass].data[index].val + '"><i class="fa fa-wrench"></i></a> ';
-                        row.find("td[data-key=refresh]").html('<a class="btn btn-xs btn-primary forceRefresh" data-index="' + index + '" data-instance="' + instance + '" data-cc="' + commandclass + '" data-valuedataitems="' + data.instances[instance].commandClasses[commandclass].data[index].data_items + '" data-type="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-name="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-value="' + data.instances[instance].commandClasses[commandclass].data[index].val + '"><i class="fa fa-refresh"></i></a>');
+                        var polling = '<a style="position:relative;top:-1px;" class="btn btn-primary btn-xs editPolling cursor" data-index="' + index + '" data-polling="' + data.instances[instance].commandClasses[commandclass].data[index].poll_intensity + '" data-instance="' + instance + '" data-cc="' + commandclass + '" data-valuedataitems="' + data.instances[instance].commandClasses[commandclass].data[index].data_items + '" data-type="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-name="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-value="' + data.instances[instance].commandClasses[commandclass].data[index].val + '"><i class="fas fa-wrench"></i></a> ';
+                        row.find("td[data-key=refresh]").html('<a class="btn btn-xs btn-primary forceRefresh" data-index="' + index + '" data-instance="' + instance + '" data-cc="' + commandclass + '" data-valuedataitems="' + data.instances[instance].commandClasses[commandclass].data[index].data_items + '" data-type="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-name="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-value="' + data.instances[instance].commandClasses[commandclass].data[index].val + '"><i class="fas fa-sync-alt"></i></a>');
                         if (data.instances[instance].commandClasses[commandclass].data[index].poll_intensity == 0) {
                             polling += '<span class="label label-success" style="font-size:1em;">{{Auto}}</span>';
                         } else if (data.instances[instance].commandClasses[commandclass].data[index].poll_intensity == 1) {
@@ -848,7 +848,7 @@ function display_node_info(){
                     }
                     row_system.find("td[data-key=value]").html(system_data);
                     if (data.instances[instance].commandClasses[commandclass].data[index].read_only == false) {
-                        row_system.find("td[data-key=edit]").html('<a class="btn btn-xs btn-primary editValue" data-index="' + index + '" data-instance="' + instance + '" data-cc="' + commandclass + '" data-valuedataitems="' + data.instances[instance].commandClasses[commandclass].data[index].data_items + '" data-type="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-name="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-value="' + data.instances[instance].commandClasses[commandclass].data[index].val + '" data-valuegenre="' +genre +'"><i class="fa fa-wrench"></i></a>');
+                        row_system.find("td[data-key=edit]").html('<a class="btn btn-xs btn-primary editValue" data-index="' + index + '" data-instance="' + instance + '" data-cc="' + commandclass + '" data-valuedataitems="' + data.instances[instance].commandClasses[commandclass].data[index].data_items + '" data-type="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-name="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-value="' + data.instances[instance].commandClasses[commandclass].data[index].val + '" data-valuegenre="' +genre +'"><i class="fas fa-wrench"></i></a>');
                     }
                     if (data.instances[instance].commandClasses[commandclass].data[index].write_only == false) {
                         row_system.find("td[data-key=updatetime]").html(jeedom.openzwave.timestampConverter(data.instances[instance].commandClasses[commandclass].data[index].updateTime));
@@ -877,7 +877,7 @@ function display_node_info(){
                         if (data.instances[instance].commandClasses[commandclass].data[index].write_only) {
                             data_item = '';
                         }
-                        row_parameter.find("td[data-key=edit]").html('<a class="btn btn-xs btn-primary editParam" data-paramid="' + index + '" data-paramtype="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-paramname="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-paramvalue="' + data_item + '"><i class="fa fa-wrench"></i></a>');
+                        row_parameter.find("td[data-key=edit]").html('<a class="btn btn-xs btn-primary editParam" data-paramid="' + index + '" data-paramtype="' + data.instances[instance].commandClasses[commandclass].data[index].typeZW + '" data-paramname="' + data.instances[instance].commandClasses[commandclass].data[index].name + '" data-paramvalue="' + data_item + '"><i class="fas fa-wrench"></i></a>');
                     }
                     if (typeof openzwave_node_translation.configuration[index] !== 'undefined' && openzwave_node_translation['configuration'][index].hasOwnProperty('help')) {
                         row_parameter.find("td[data-key=help]").html(openzwave_node_translation['configuration'][index].help);
@@ -905,7 +905,7 @@ function show_groups(){
     var tr_groups = "";
     $("#groups").empty();
     $("#groups").append('<br/>');
-    $("#groups").append('<a class="btn btn-info btn-sm findUsage pull-right"><i class="fa fa-sitemap"></i> {{Associé à quels modules}}</a>');
+    $("#groups").append('<a class="btn btn-info btn-sm findUsage pull-right"><i class="fas fa-sitemap"></i> {{Associé à quels modules}}</a>');
     $("#groups").append('<br/><br/>');
     for (z in node_selected.groups) {
         if (!isNaN(z)) {

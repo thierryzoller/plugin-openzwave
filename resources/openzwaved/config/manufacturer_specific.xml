@@ -571,6 +571,9 @@
 		<Product type="1301" id="1000" name="FGT001 Heat Controller" config="fibaro/fgt001.xml"/>
 		<Product type="1701" id="2000" name="FGWPG111 US Wall Plug" config="fibaro/fgwpg111.xml"/>
 		<Product type="1801" id="1000" name="FGWPG111 UK Wall Plug" config="fibaro/fgwpg111.xml"/>
+		<Product type="1b01" id="1000" name="FGWDSEU-221 Walli Switch" config="fibaro/fgwdseu221.xml" />
+		<Product type="1d01" id="1000" name="FGWREU-111 Walli Roller Shutter" config="fibaro/fgwreu111.xml" />
+		<Product type="1f01" id="1000" name="FGWOF011 Walli Outlet Type F" config="fibaro/fgwof011.xml" />
 	</Manufacturer>
 	<Manufacturer id="0138" name="First Alert">
 		<Product type="0001" id="0002" name="ZCombo Smoke and Carbon Monoxide Detector"  config="firstalert/zcombo.xml"/>
@@ -911,6 +914,7 @@
 		<Product type="3102" id="0202" name="MH-S312 Two-load" config="mcohome/mhs312.xml"/>
 		<Product type="4121" id="1302" name="MH-S312 Two-load GEN5" config="mcohome/mhs312.xml"/>
 		<Product type="3102" id="0204" name="MH-S314 Four-load" config="mcohome/mhs314.xml"/>
+		<Product type="3141" id="1302" name="MH-S314 Four-load GEN5" config="mcohome/mhs314gen5.xml"/>
 		<Product type="3141" id="5102" name="MH-S314 Four-load GEN5" config="mcohome/mhs314gen5.xml"/>
 		<Product type="4102" id="0201" name="MH-S411 One-load" config="mcohome/mhs411.xml"/>
 		<Product type="4102" id="0202" name="MH-S412 Two-load" config="mcohome/mhs412.xml"/>

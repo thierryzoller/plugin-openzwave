@@ -1,9 +1,7 @@
 {
-    "name": "DBMZ Motor Control", 
+    "name": "Walli Volet roulant", 
     "type": "Volets", 
-    "comlink": "", 
     "remark": "", 
-    "imglink": "electronicsolutions.dbmz", 
     "commands": [
         {
             "name": "Up", 
@@ -83,6 +81,68 @@
             }
         }, 
         {
+            "name": "Rafraichir", 
+            "type": "action", 
+            "isVisible": 0, 
+            "isHistorized": 0, 
+            "configuration": {
+                "class": 38, 
+                "value": "type=refreshData", 
+                "index": 0, 
+                "instance": 1, 
+                "minValue": 0, 
+                "maxValue": 99
+            }, 
+            "subtype": "other", 
+            "display": {
+                "icon": "<i class=\"fa fa-refresh\"></i>", 
+                "generic_type": "DONT"
+            }
+        }, 
+        {
+            "name": "Puissance", 
+            "type": "info", 
+            "isVisible": 0, 
+            "isHistorized": 0, 
+            "configuration": {
+                "class": 50, 
+                "value": "", 
+                "index": 8, 
+                "instance": 1
+            }, 
+            "subtype": "numeric", 
+            "display": {
+                "generic_type": "POWER"
+            }, 
+            "template": {
+                "dashboard": "tile", 
+                "mobile": "tile"
+            }, 
+            "unite": "W"
+        }, 
+        {
+            "name": "Consommation", 
+            "type": "info", 
+            "isVisible": 0, 
+            "isHistorized": 0, 
+            "configuration": {
+                "class": 50, 
+                "value": "", 
+                "index": 0, 
+                "instance": 1, 
+                "minValue": 0
+            }, 
+            "subtype": "numeric", 
+            "display": {
+                "generic_type": "CONSUMPTION"
+            }, 
+            "template": {
+                "dashboard": "tile", 
+                "mobile": "tile"
+            }, 
+            "unite": "kWh"
+        }, 
+        {
             "name": "Stop", 
             "type": "action", 
             "isVisible": 1, 
@@ -99,6 +159,43 @@
             "display": {
                 "icon": "<i class=\"fa fa-stop\"></i>", 
                 "generic_type": "FLAP_STOP"
+            }
+        }, 
+        {
+            "name": "Étalonner", 
+            "type": "action", 
+            "isVisible": 0, 
+            "isHistorized": 0, 
+            "configuration": {
+                "class": 112, 
+                "value": "type=setconfig&value=2&size=1", 
+                "index": 150, 
+                "instance": 1
+            }, 
+            "subtype": "other", 
+            "display": {
+                "generic_type": "DONT"
+            }
+        }, 
+        {
+            "name": "Scene", 
+            "type": "numeric", 
+            "isVisible": 0, 
+            "isHistorized": 0, 
+            "configuration": {
+                "class": 91, 
+                "value": "", 
+                "index": 128, 
+                "instance": 1, 
+                "repeatEventManagement": "always"
+            }, 
+            "subtype": "numeric", 
+            "display": {
+                "generic_type": "DONT"
+            }, 
+            "template": {
+                "dashboard": "tile", 
+                "mobile": "tile"
             }
         }
     ]
