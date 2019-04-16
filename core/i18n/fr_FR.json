@@ -224,7 +224,8 @@
         "(Attention : Relance du réseau)": "(Attention : Relance du réseau)",
         "Redémarrage": "Redémarrage",
         "Redémarre le contrôleur sans effacer les paramètres de sa configuration réseau.": "Redémarre le contrôleur sans effacer les paramètres de sa configuration réseau.",
-        "Remise à zéro": "Remise à zéro",
+        "GitReset": "Githib Core Syncro Manuel"
+		"Remise à zéro": "Remise à zéro",
         "Remise à zéro du contrôleur.": "Remise à zéro du contrôleur.",
         "Remet à zéro un contrôleur et efface ses paramètres de configuration réseau.": "Remet à zéro un contrôleur et efface ses paramètres de configuration réseau.",
         "Le contrôleur devient un contrôleur primaire, prêt pour ajouter de nouveaux modules à un nouveau réseau.": "Le contrôleur devient un contrôleur primaire, prêt pour ajouter de nouveaux modules à un nouveau réseau.",

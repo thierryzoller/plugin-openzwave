@@ -224,7 +224,8 @@
         "(Attention : Relance du réseau)": "(Warning: Restart the network)",
         "Redémarrage": "Restart",
         "Redémarre le contrôleur sans effacer les paramètres de sa configuration réseau.": "Restart the controller without clearing the parameters of its network configuration.",
-        "Remise à zéro": "Reset",
+        "GitReset": "Githib Core Manual Sync"
+		"Remise à zéro": "Reset",
         "Remise à zéro du contrôleur.": "Controller reset.",
         "Remet à zéro un contrôleur et efface ses paramètres de configuration réseau.": "Resets a controller and removes its network configuration settings.",
         "Le contrôleur devient un contrôleur primaire, prêt pour ajouter de nouveaux modules à un nouveau réseau.": "The controller becomes a primary controller, ready to add new modules to a new network.",
