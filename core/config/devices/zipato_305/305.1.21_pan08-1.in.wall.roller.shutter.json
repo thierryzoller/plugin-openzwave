@@ -1,8 +1,9 @@
 {
-    "name": "FGR-223 Volet roulant", 
+    "name": "PAN08-1 In Wall Roller Shutter Controller", 
     "type": "Volets", 
-    "remark": "Nouveau nom du module FGR-222", 
-    "imglink": "fibaro.fgr222", 
+    "comlink": "", 
+    "remark": "", 
+    "imglink": "zipato.pan08", 
     "commands": [
         {
             "name": "Up", 
@@ -77,8 +78,8 @@
                 "generic_type": "FLAP_SLIDER"
             }, 
             "template": {
-                "dashboard": "store", 
-                "mobile": "store"
+                "dashboard": "tooltip", 
+                "mobile": "tooltip"
             }
         }, 
         {
@@ -99,49 +100,6 @@
                 "icon": "<i class=\"fa fa-refresh\"></i>", 
                 "generic_type": "DONT"
             }
-        }, 
-        {
-            "name": "Puissance", 
-            "type": "info", 
-            "isVisible": 0, 
-            "isHistorized": 0, 
-            "configuration": {
-                "class": 50, 
-                "value": "", 
-                "index": 8, 
-                "instance": 1
-            }, 
-            "subtype": "numeric", 
-            "display": {
-                "generic_type": "POWER"
-            }, 
-            "template": {
-                "dashboard": "tile", 
-                "mobile": "tile"
-            }, 
-            "unite": "W"
-        }, 
-        {
-            "name": "Consommation", 
-            "type": "info", 
-            "isVisible": 0, 
-            "isHistorized": 0, 
-            "configuration": {
-                "class": 50, 
-                "value": "", 
-                "index": 0, 
-                "instance": 1, 
-                "minValue": 0
-            }, 
-            "subtype": "numeric", 
-            "display": {
-                "generic_type": "CONSUMPTION"
-            }, 
-            "template": {
-                "dashboard": "tile", 
-                "mobile": "tile"
-            }, 
-            "unite": "kWh"
         }, 
         {
             "name": "Stop", 
@@ -182,95 +140,63 @@
             }
         }, 
         {
-            "name": "Incliner", 
-            "type": "action", 
+            "name": "Puissance", 
+            "type": "info", 
             "isVisible": 0, 
-            "isHistorized": 0, 
+            "isHistorized": 1, 
             "configuration": {
-                "class": 38, 
-                "value": "type=buttonaction&action=press", 
-                "index": 7, 
-                "instance": 1, 
-                "minValue": 0, 
-                "maxValue": 99
-            }, 
-            "subtype": "other", 
-            "display": {
-                "icon": "<i class=\"fa fa-plus\"></i>", 
-                "generic_type": "DONT"
-            }
-        }, 
-        {
-            "name": "Décliner", 
-            "type": "action", 
-            "isVisible": 0, 
-            "isHistorized": 0, 
-            "configuration": {
-                "class": 38, 
-                "value": "type=buttonaction&action=press", 
+                "class": 50, 
+                "value": "", 
                 "index": 8, 
                 "instance": 1, 
                 "minValue": 0, 
-                "maxValue": 99
-            }, 
-            "subtype": "other", 
-            "display": {
-                "icon": "<i class=\"fas fa-minus\"></i>", 
-                "generic_type": "DONT"
-            }
-        }, 
-        {
-            "name": "Pas", 
-            "type": "info", 
-            "isVisible": 0, 
-            "isHistorized": 0, 
-            "configuration": {
-                "class": 38, 
-                "value": "", 
-                "index": 6, 
-                "instance": 1
+                "maxValue": 2500
             }, 
             "subtype": "numeric", 
             "display": {
-                "generic_type": "DONT"
-            }
+                "generic_type": "POWER"
+            }, 
+            "unite": "W"
         }, 
         {
-            "name": "Étalonner", 
-            "type": "action", 
-            "isVisible": 0, 
-            "isHistorized": 0, 
-            "configuration": {
-                "class": 112, 
-                "value": "type=setconfig&value=2&size=1", 
-                "index": 150, 
-                "instance": 1
-            }, 
-            "subtype": "other", 
-            "display": {
-                "generic_type": "DONT"
-            }
-        },
-        {
-            "name": "Scene", 
+            "name": "Consommation", 
             "type": "info", 
             "isVisible": 0, 
             "isHistorized": 0, 
             "configuration": {
-                "class": 91, 
+                "class": 50, 
                 "value": "", 
-                "index": 128, 
+                "index": 0, 
                 "instance": 1, 
-                "repeatEventManagement": "always"
+                "minValue": 0
             }, 
             "subtype": "numeric", 
             "display": {
-                "generic_type": "DONT"
+                "generic_type": "CONSUMPTION"
+            }, 
+            "unite": "kWh"
+        }, 
+        {
+            "name": "Tension", 
+            "type": "info", 
+            "isVisible": 1, 
+            "isHistorized": 0, 
+            "configuration": {
+                "class": 50, 
+                "value": "", 
+                "index": 16, 
+                "instance": 1, 
+                "minValue": 260, 
+                "maxValue": 200
+            }, 
+            "subtype": "numeric", 
+            "display": {
+                "generic_type": "VOLTAGE"
             }, 
             "template": {
-                "dashboard": "tile", 
-                "mobile": "tile"
-            }
+                "dashboard": "tile"
+            }, 
+            "unite": "V"
         }
     ]
 }
